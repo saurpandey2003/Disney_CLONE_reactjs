@@ -15,7 +15,7 @@ const Originalsmovie = () => {
                         movies.map((movie, key) => (
                             <div>
                                 {movie.id}
-                                <Link to={`/detail` + movie.id}>
+                                <Link to={`/detail/${movie.id}`}>
                                     <img src={movie.cardImg}></img>
                                 </Link>
                             </div>

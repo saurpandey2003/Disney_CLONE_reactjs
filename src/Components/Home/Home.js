@@ -24,7 +24,9 @@ const Home = () => {
     useEffect(() => {
       console.log("hello");
   
-      const moviesCollection = collection(db, "movies"); // Access the "movies" collection
+      const moviesCollection = collection(db, "movies");
+      
+    
   
       onSnapshot(moviesCollection, (snapshot) => {
         snapshot.forEach((doc) => {

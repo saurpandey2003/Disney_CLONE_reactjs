@@ -9,6 +9,10 @@ import Home from "./Home";
 import { useNavigate } from 'react-router-dom';
 import Login from "./Login";
 import { useDispatch, useSelector } from "react-redux";
+import searchicon from "../images-20231018T171719Z-001/images/search-icon.svg"
+import wtchicon from "../images-20231018T171719Z-001/images/watchlist-icon.svg"
+import movieicon from "../images-20231018T171719Z-001/images/movie-icon.svg"
+import seriesicon from "../images-20231018T171719Z-001/images/series-icon.svg"
 
 
 import {
@@ -73,10 +77,10 @@ const Header = () => {
 
             <ul>
               <Link to="/home"> <li className="li_logo"><img src={homelogo} alt="HOME"></img>HOME </li></Link>
-              <Link to="/home"><li className="li_logo"><img src={homelogo} alt="SEARCH"></img>SEARCH</li></Link>
-              <Link to="/home"><li className="li_logo"><img src={homelogo} alt="WATCHLIST"></img>WATCHLIST</li></Link>
-              <Link to="/home"><li className="li_logo"><img src={homelogo} alt="MOVIES"></img>MOVIES</li></Link>
-              <Link to="/home"><li className="li_logo"><img src={homelogo} alt="SERIES"></img>SERIES</li></Link>
+              <Link to="/home"><li className="li_logo"><img src={searchicon} alt="SEARCH"></img>SEARCH</li></Link>
+              <Link to="/home"><li className="li_logo"><img src={wtchicon} alt="WATCHLIST"></img>WATCHLIST</li></Link>
+              <Link to="/home"><li className="li_logo"><img src={movieicon} alt="MOVIES"></img>MOVIES</li></Link>
+              <Link to="/home"><li className="li_logo"><img src={seriesicon} alt="SERIES"></img>SERIES</li></Link>
             </ul>
        
           </div>
