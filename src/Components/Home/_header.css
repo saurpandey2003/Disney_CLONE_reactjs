@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Nunito:wght@200&display=swap');
+nav{
+    /* position:sticky; */
+    top: 0px;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 4.5rem;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    background-color: black;
+    font-family: 'Nunito', sans-serif;
+}
+
+ 
+
+
+.header img{
+    width: 7rem;
+    margin-left: 1.5rem;
+   padding: 1rem;
+}
+.header button{
+min-width: 5rem;
+height: 2.3rem;
+margin-right: 1.5rem;
+background-color: black;
+color: #f9f9f9;
+cursor: pointer;
+border: 1px solid #f9f9f9;
+border-radius: 2px;
+letter-spacing: 2px;
+}
+.header button:hover{
+    background-color: rgb(112, 101, 101);
+}
+
+
+.nav_menu ul{
+    display: flex;
+    list-style: none;
+    font-size: 10px;
+    gap: 2rem;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+.nav_menu{
+    display: flex;
+    position: absolute;
+    left: 9rem;
+    justify-content:flex-end;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    transition: opacity 0.3s ease-in-out;
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav_menu {
+        display: none;
+    }
+}
+
+.li_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    font-size: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-bottom: 0;
+    position: relative; 
+}
+
+.li_logo::before {
+    content: '';
+    background-color: rgb(249, 249, 249);
+    border-radius: 0 0 0 4px;
+    transform-origin:left center;
+    transform: scaleX(0);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.165, 1);
+    visibility: hidden;
+    width: auto;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+}
+
+.li_logo:hover::before {
+    transform: scaleX(1);
+    visibility: visible;
+    width: 100%; 
+    opacity: 1;
+}
+
+
+.li_logo img{
+    position: relative;
+    bottom: 2px;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+}

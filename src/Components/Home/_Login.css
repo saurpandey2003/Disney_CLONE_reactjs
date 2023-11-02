@@ -1,0 +1,62 @@
+.Conatiner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Content {
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images-20231018T171719Z-001/images/login-background.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    z-index: -1;
+
+}
+
+
+.Content_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 20rem;
+    min-height: 10rem;
+    gap: 1.5rem;
+    word-wrap: break-word;
+    color: #f9f9f9;
+}
+
+.Content_items img{
+    min-width: 20rem;
+    max-width: 20rem;
+}
+
+.Content_items button{
+    width: 20rem;
+    padding: 1rem;
+    background-color:#0063e5;
+    color: #f9f9f9;
+    font-weight: bolder;
+    border: none;
+    letter-spacing: 3px;
+    border-radius: 2px;
+
+}
+
+
+#offer{
+    font-size:8px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+
+}
