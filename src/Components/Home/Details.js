@@ -10,10 +10,11 @@ import groupicon from "../images-20231018T171719Z-001/images/group-icon.png"
 
 
 
+
 const Detail = () => {
     const { id } = useParams();
 
-    const [detailData, setDetailData] = useState({});
+  const [detailData, setDetailData] = useState({});
 
 
     useEffect(() => {
@@ -35,6 +36,7 @@ const Detail = () => {
 
         fetchMovieData();
     }, [id]);
+
 
     return (
         <>
@@ -60,3 +62,4 @@ const Detail = () => {
 };
 
 export default Detail;
+

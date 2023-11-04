@@ -79,7 +79,7 @@ const Header = () => {
               <Link to="/home"> <li className="li_logo"><img src={homelogo} alt="HOME"></img>HOME </li></Link>
               <Link to="/home"><li className="li_logo"><img src={searchicon} alt="SEARCH"></img>SEARCH</li></Link>
               <Link to="/home"><li className="li_logo"><img src={wtchicon} alt="WATCHLIST"></img>WATCHLIST</li></Link>
-              <Link to="/home"><li className="li_logo"><img src={movieicon} alt="MOVIES"></img>MOVIES</li></Link>
+              <Link to="/Movie"><li className="li_logo"><img src={movieicon} alt="MOVIES"></img>MOVIES</li></Link>
               <Link to="/home"><li className="li_logo"><img src={seriesicon} alt="SERIES"></img>SERIES</li></Link>
             </ul>
        
