@@ -8,11 +8,7 @@ import img2 from "../images-20231018T171719Z-001/images/slider-badging.jpg";
 import img3 from "../images-20231018T171719Z-001/images/slider-scale.jpg";
 import img4 from "../images-20231018T171719Z-001/images/slider-scales.jpg";
 import Viewers from "./viewer";
-import Rec_movie from "./Recomnd_movie";
-import NewDisneyMovie from "./newDisneyMovie";
-import Trending_movies from "./TrendingMovies";
-import { UseSelector } from "react-redux/es/hooks/useSelector";
-import Originalsmovie from "./newMovies";
+
 
 
 const ImageSlider = () => {
@@ -39,11 +35,8 @@ const ImageSlider = () => {
         </Slider>
 
         <Viewers></Viewers>
-        <Rec_movie></Rec_movie>
-        <NewDisneyMovie></NewDisneyMovie>
-      <Trending_movies></Trending_movies>
-      <Originalsmovie></Originalsmovie>
-
+        
+       
 
 
 
